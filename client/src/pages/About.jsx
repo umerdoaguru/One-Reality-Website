@@ -11,10 +11,13 @@ import CompleteTitle from "../components/CompleteTitle";
 import Space from "../components/Space";
 import CompleteProjecttwo from "../components/CompleteProjecttwo";
 
+import Footer from "../components/Footer";
+
 function About() {
   return (
     <>
       <Heros title="About Us" backgroundImage={AboutUs} />
+      <Space />
       <AboutSection />
       <CompleteTitle />
       <CompleteProject
@@ -40,6 +43,7 @@ function About() {
 
       <ContactSection />
       <CountSection />
+      <Footer />
     </>
   );
 }

@@ -20,7 +20,7 @@ function ContactSection() {
               <h1>MAKE AN APPOINTMENT NOW</h1>
               <h1>7896541230</h1>
 
-              <button className="btn btn-lg  fw-bold  rounded-pill">
+              <button className="btn btn-lg  fw-bold  rounded-pill ">
                 Contact Us
               </button>
             </main>

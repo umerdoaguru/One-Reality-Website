@@ -23,5 +23,6 @@ export default CompleteTitle;
 const Container = styled.div`
   h1 {
     font-family: "Playfair Display";
+    color: #06933d;
   }
 `;

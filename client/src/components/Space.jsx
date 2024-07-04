@@ -5,7 +5,7 @@ function Space() {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-12 mt-3 mb-3"></div>
+          <div className="col-md-12 mt-4 mb-4"></div>
         </div>
       </div>
     </>
