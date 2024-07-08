@@ -19,8 +19,11 @@ function Forms() {
                   <CiMap className="fs-1 " />
                 </div>
                 <h3 className="pt-2">Office Address</h3>
-                <h6>382, Wright Town</h6>
-                <h6>Jabalpur</h6>
+                <h6>
+                  First Floor, Chamber No. 1 & 2, Datt Residency, opposite
+                  Railway Stadium North, South Civil Lines,
+                </h6>
+                <h6>Jabalpur, Madhya Pradesh 482001</h6>
               </div>
               <hr />
               <div>
@@ -28,8 +31,8 @@ function Forms() {
                   <IoTime className=" fs-1" />
                 </div>
                 <h3 className="pt-2">Working Hours</h3>
-                <h6>Monday to Friday 09:00 to 18:30</h6>
-                <h6>Saturday we work until 15:30</h6>
+                <h6>Sunday to Saturday </h6>
+                <h6>10:00 Am to 7:00 Pm</h6>
               </div>
               <hr />
               <div className="pb-5">

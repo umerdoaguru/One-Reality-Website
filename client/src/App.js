@@ -9,6 +9,9 @@ import CountSection from "./components/CountSection";
 import CompleteProject from "./components/CompleteProject";
 
 import ContactForm from "./pages/ContactForm";
+import Blogs from "./pages/Blogs";
+import Gallery from "./pages/Gallery";
+import Cards from "./components/gallery/Cards";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="/countSection" element={<CountSection />} />
           <Route path="/completeProject" element={<CompleteProject />} />
           <Route path="/contact" element={<ContactForm />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/cards" element={<Cards />} />
         </Routes>
       </Router>
     </>
