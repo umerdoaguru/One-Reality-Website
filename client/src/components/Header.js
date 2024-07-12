@@ -5,14 +5,16 @@ import styled from "styled-components";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
 import { IoMdTime } from "react-icons/io";
+import bgcolor from '../'
 
 function Header() {
   return (
     <Wrapper>
       <div className="">
-        <div className="container-fluid top-header" style={{ backgroundColor: "#06933d" }}>
+        {/* <div className="container-fluid top-header" style={{ backgroundColor: "#006c28" }}> */}
+        <div className="container-fluid top-header" style={{ backgroundColor: "#01614e" }}>
           <div className="container">
-            <div className="row text-white p-2">
+            <div className="row text-white p-2" >
               <div className="col-lg-4 mt-3">
                 <div className="mx-3">
                   <p>Welcome to One Realty</p>
@@ -93,7 +95,7 @@ function Header() {
 
                         <li className="nav-item">
                           <a className="nav-link">
-                            <Link to="/about_us"> About Us</Link>
+                            <Link to="/about"> About Us</Link>
                           </a>
                         </li>
 
@@ -103,7 +105,7 @@ function Header() {
                             className="btn dropdown-toggle"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
-                            style={{ color: "#06933d" }}
+                            style={{ color: "#01614e" }}
                           >
                             Our Project
                           </button>
@@ -135,7 +137,7 @@ function Header() {
 
                         <li className="nav-item">
                           <a className="nav-link">
-                            <Link to="/career">Gallery</Link>
+                            <Link to="/gallery">Gallery</Link>
                           </a>
                         </li>
                         <li className="nav-item">
@@ -155,7 +157,7 @@ function Header() {
                                 padding: "0.5rem",
                               }}
                             >
-                              <Link to="/contact_us">Contact Us</Link>
+                              <Link to="/contact">Contact Us</Link>
                             </a>
                           </li>
                         </ul>
@@ -177,7 +179,9 @@ export default Header;
 const Wrapper = styled.div`
   a {
     text-decoration: none;
-    color: #06933d;
+    /* color: #006c28; */
+    color: #01614e;
+    font-size:1rem;
   }
   li{
     list-style-type: none;
@@ -193,7 +197,7 @@ const Wrapper = styled.div`
       display: none;
       
     }
-    @media screen and (min-width: 768px) and (max-width: 1020px) {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
       display: none;
       
     }

@@ -6,6 +6,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AboutSection from "../components/HomePage/AboutSection";
 import Bank_Partner from "../components/HomePage/Bank_Partner";
+import WhyChoose from "../components/HomePage/WhyChoose";
+import OurProjects from "../components/HomePage/OurProjects";
+import LastHeropage from "../components/HomePage/LastHeropage";
+import OurVideo from "../components/HomePage/OurVideo";
 
 function HomePage() {
   // const settings = {
@@ -45,7 +49,7 @@ function HomePage() {
         }}
       >
         <div class="container">
-          <div class="row">
+          {/* <div class="row">
             <div class="col-lg-8">
               <div class="slider-content s-slider-content text-left">
                 <h2>
@@ -98,12 +102,17 @@ function HomePage() {
                 <h2>$1,786.80</h2>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
       <AboutSection/>
+      <WhyChoose/>
+      <OurProjects/>
       <Bank_Partner/>
+      <OurVideo/>
+      <LastHeropage/>
+
     </>
   );
 }

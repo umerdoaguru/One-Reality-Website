@@ -1,16 +1,16 @@
-import React from 'react';
-import img from '../../images/about_img02.png'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import About2 from "../images/about2.png";
 
 const AboutSection = () => {
   return (
-    <Wrapper>
-    
-       <section id="about" className="mt-5">
+    <>
+      <Container>
+      <section id="about" className="mt-5">
       <div className="container">
 <div className="heading text-center">
   
-  <h1>One Realty Developers: The Best Developers in Jabalpur</h1>
+  <h1>Welcome to One Realty Developer About Us Page</h1>
   <div
                 className="underline mx-auto"
                 style={{
@@ -22,24 +22,14 @@ const AboutSection = () => {
                 }}
               ></div>
 </div>
-<div className="content mb-3" data-aos="fade-down">
 
-  <p>With over nine years of experience in real estate development, One Realty Developers has been building a strong organization committed to delighting customers through innovation since 2011. Our expertise spans housing solutions, construction of residential, commercial, and industrial buildings, as well as infrastructural works. Over the years, our projects have introduced many firsts to the Jabalpur real estate market. One Realty Developers embodies the principles of transparency, integrity, and innovation in the real estate industry.</p>
-</div>
 
 
 
 
         <div className="row align-items-center mt-5">
-          <div className="col-lg-6">
-            <div className="s-about-img p-relative" data-aos= "fade-right">
-              <img src= {img} alt="img" />
-              
-            </div>
-          </div>
-
-          <div className="col-lg-6 mt-2">
-            <div className="about-content s-about-content pl-30  " data-aos= "fade-left">
+        <div className="col-lg-6 mt-2">
+            <div className="about-content s-about-content pl-30  " data-aos= "fade-right">
               <div className="about-title second-atitle">
                 <span>About Us</span>
                 <h2>Welcome To Our Relxtower</h2>
@@ -53,21 +43,27 @@ const AboutSection = () => {
               <button  className="btn" style={{color:"white" ,backgroundColor:"  color: #01614e;"}}>Get Started</button>
             </div>
           </div>
+          <div className="col-lg-6">
+            <div className="s-about-img p-relative" data-aos= "fade-left">
+              <img src= {About2} alt="img" />
+              
+            </div>
+          </div>
+
+         
           
         </div>
       </div>
     </section>
-    
-    </Wrapper>
- 
+      </Container>
+    </>
   );
 };
 
-export default AboutSection; 
-const Wrapper = styled.div`
-img{
-  width: 100%;
-}
+export default AboutSection;
+
+const Container = styled.div`
+  
 h1{
   /* color: #006c28; */
   color: #01614e;
@@ -78,5 +74,4 @@ h2{
   /* color: #006c28; */
   color: #01614e;
 }
-
-`
+`;

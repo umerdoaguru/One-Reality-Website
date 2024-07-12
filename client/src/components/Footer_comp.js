@@ -20,7 +20,7 @@ import img from "../images/company logo.png";
 
 
 
-function Fotter() {
+function Footer_comp() {
     const handleFooterLink = () => {
         window.scrollTo(0, 0);
       };
@@ -29,7 +29,8 @@ function Fotter() {
     <Container>
     <footer
       style={{
-        backgroundColor:"#3e2969"
+        // backgroundColor:"#006c28"
+        backgroundColor:"#01614e"
        
       }}
     >
@@ -261,7 +262,7 @@ function Fotter() {
   )
 }
 
-export default Fotter;
+export default Footer_comp;
 const Container = styled.div`
   li {
     list-style: none;
