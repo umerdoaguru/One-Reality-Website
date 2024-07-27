@@ -101,6 +101,7 @@ h2{
       
       color: #01614e;
       /* color: #d29b33; */
+      font-family: "Playfair Display";
 
 }
 

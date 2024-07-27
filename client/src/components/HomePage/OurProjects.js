@@ -5,6 +5,7 @@ import NirvanaExoticaa from './OurProjects/NirvanaExoticaa';
 import NirmanNagar from './OurProjects/NirmanNagar';
 import {  Nav } from "react-bootstrap";
 import styled from 'styled-components';
+import NirvanaHome from './OurProjects/NirvanaHome';
 
 
 function OurProjects() {
@@ -62,6 +63,14 @@ function OurProjects() {
                             Nirman Nagar
                           </Nav.Link>
                         </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link
+                            eventKey="tab5"
+                            className={`navlink shadow mx-2`}
+                          >
+                            Nirman Home
+                          </Nav.Link>
+                        </Nav.Item>
                       </div>
                       <div>
                         {/* <p className="fw-bold">Total Lab - 09</p> */}
@@ -72,6 +81,7 @@ function OurProjects() {
                       {selectedTab === "tab2" && <NirvanaCity />}
                       {selectedTab === "tab3" && <NirvanaExoticaa />}
                       {selectedTab === "tab4" && <NirmanNagar />}
+                      {selectedTab === "tab5" && <NirvanaHome />}
                     </div>
                   </div>
                 </div>
@@ -99,5 +109,6 @@ const Wrapper  = styled.div`
     /* color: #006c28; */
     color: #01614e;
     /* color: #d29b33; */
+    font-family: "Playfair Display";
   }
 `

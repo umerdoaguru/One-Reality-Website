@@ -39,17 +39,24 @@ const AboutSection = () => {
           </div>
 
           <div className="col-lg-6 mt-2">
-            <div className="about-content s-about-content pl-30  " data-aos= "fade-left">
+          <div className="about-content s-about-content pl-30  " data-aos= "fade-left">
               <div className="about-title second-atitle">
                 <span>About Us</span>
-                <h2>Welcome To Our Relxtower</h2>
-                <p><span></span>We provide an essential service for you</p>
+                <h2>Welcome To One Realty</h2>
+                <p><span></span>We provide an essential support for you</p>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
-              omnis iste natus error sit voluptatem accusantium doloremque laudantiue.</p>
+              <p>With extensive expertise in the field of real estate, One Realty Developers provides top-tier housing solutions and undertakes the construction of residential, commercial, and industrial buildings. Our services extend to comprehensive infrastructural works, ensuring robust and sustainable development.</p>
+              <ul className="list-item">
+                <li><span>Residential Construction</span>: We create beautiful, functional, and durable homes that cater to diverse needs and preferences.</li>
+                <li><span>Commercial Projects</span>: From office spaces to retail establishments, we deliver commercial buildings designed for success and growth.</li>
+                <li>
+                <span>Industrial Buildings</span>: Our industrial construction projects are built to support operational efficiency and long-term resilience.
+
+                </li>
+                <li>
+                <span>Infrastructural Works</span>: We specialize in developing essential infrastructure, including roads, bridges, and utility systems, to support thriving communities.
+                </li>
+              </ul>
               <button  className="btn" style={{color:"white" ,backgroundColor:"  color: #01614e;"}}>Get Started</button>
             </div>
           </div>
@@ -72,11 +79,19 @@ h1{
   /* color: #006c28; */
   color: #01614e;
   /* color: #d29b33; */
+  font-family: "Playfair Display";
 }
 h2{
   /* color: #006c28; */
   /* color: #006c28; */
   color: #01614e;
+  font-family: "Playfair Display";
+}
+li{
+  margin-top: 1rem;
+}
+span{
+  font-weight: bold;
 }
 
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import img from '../../../images/nirvana_city.jfif'
+import img from '../../../images/nirvana_city_new.jpg'
 function NirvanaCity() {
   return (
     <Wrapper>

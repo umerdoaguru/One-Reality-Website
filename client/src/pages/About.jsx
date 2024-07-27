@@ -1,17 +1,13 @@
 import React from "react";
-import AboutUs from "../images/about_img.jpg";
+import AboutUs from "../images/aboutnew1.jpg";
 import About1 from "../images/About1.png";
 
-import AboutSection from "../components/AboutSection";
+import AboutSection from "../components/AboutPage/AboutSection";
 import Heros from "../components/Heros";
-import ContactSection from "../components/ContactSection";
-import CountSection from "../components/CountSection";
-import CompleteProject from "../components/CompleteProject";
-import CompleteTitle from "../components/CompleteTitle";
-import Space from "../components/Space";
-import CompleteProjecttwo from "../components/CompleteProjecttwo";
+import ContactSection from "../components/AboutPage/ContactSection";
+import CountSection from "../components/AboutPage/CountSection";
+import OurProjects from "../components/AboutPage/OurProjects";
 
-import Footer from "../components/Footer";
 
 function About() {
   return (
@@ -19,28 +15,8 @@ function About() {
       <Heros title="About Us" backgroundImage={AboutUs} />
    
       <AboutSection />
+<OurProjects/>
      
-      <CompleteProject
-        title="Project 1"
-        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio necessitatibus illo ipsam odit temporibus itaque nam officia doloribus, veritatis esse consequuntur nostrum molestias, voluptatum id voluptate similique reprehenderit quo dolores eaque nobis? Magni ad maxime labore unde debitis soluta rerum vero? Inventore quaerat tenetur eaque magnam tempore suscipit, assumenda minus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio necessitatibus illo ipsam odit temporibus itaque nam officia doloribus, veritatis esse consequuntur nostrum molestias, voluptatum id voluptate similique reprehenderit quo dolores eaque nobis? Magni ad maxime labore unde debitis soluta rerum vero? Inventore quaerat tenetur eaque magnam tempore suscipit, assumenda minus!"
-        imageSrc={About1}
-        imageAlt="Description of the image"
-      />
-   
-      <CompleteProjecttwo
-        title="Project 2"
-        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio necessitatibus illo ipsam odit temporibus itaque nam officia doloribus, veritatis esse consequuntur nostrum molestias, voluptatum id voluptate similique reprehenderit quo dolores eaque nobis? Magni ad maxime labore unde debitis soluta rerum vero? Inventore quaerat tenetur eaque magnam tempore suscipit, assumenda minus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio necessitatibus illo ipsam odit temporibus itaque nam officia doloribus, veritatis esse consequuntur nostrum molestias, voluptatum id voluptate similique reprehenderit quo dolores eaque nobis? Magni ad maxime labore unde debitis soluta rerum vero? Inventore quaerat tenetur eaque magnam tempore suscipit, assumenda minus!"
-        imageSrc={About1}
-        imageAlt="Description of the image"
-      />
-   
-      <CompleteProject
-        title="Project 3"
-        description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio necessitatibus illo ipsam odit temporibus itaque nam officia doloribus, veritatis esse consequuntur nostrum molestias, voluptatum id voluptate similique reprehenderit quo dolores eaque nobis? Magni ad maxime labore unde debitis soluta rerum vero? Inventore quaerat tenetur eaque magnam tempore suscipit, assumenda minus! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio necessitatibus illo ipsam odit temporibus itaque nam officia doloribus, veritatis esse consequuntur nostrum molestias, voluptatum id voluptate similique reprehenderit quo dolores eaque nobis? Magni ad maxime labore unde debitis soluta rerum vero? Inventore quaerat tenetur eaque magnam tempore suscipit, assumenda minus!"
-        imageSrc={About1}
-        imageAlt="Description of the image"
-      />
-
       <ContactSection />
       <CountSection />
      

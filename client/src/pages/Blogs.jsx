@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "../images/AboutUs.png";
+import AboutUs from "../images/blogs.jpg";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,7 +10,7 @@ function Blogs() {
   return (
     <>
   
-      <Heros title="Neews feeds" backgroundImage={AboutUs} />
+      <Heros title="Blogs" backgroundImage={AboutUs} />
 
       <Blog />
 

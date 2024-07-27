@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 function Category() {
-  const [activeTab, setActiveTab] = useState("All");
+  const [activeTab, setActiveTab] = useState("");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);

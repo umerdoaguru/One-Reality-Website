@@ -4,6 +4,9 @@ import wide from '../../images/wide_range.jpg'
 import comfortable from '../../images/comfortable.jpg'
 import quality from '../../images/quality.jpg'
 import support from '../../images/support.webp'
+import assurance from '../../images/quality_assurance.png'
+import sustainable from '../../images/sustainable.jpg'
+
 
 
 function WhyChoose() {
@@ -58,13 +61,13 @@ function WhyChoose() {
 
           <div className="col-lg-4 col-md-6 mt-4"  data-aos="flip-left">
             <div className="card shadow" id="cardshadow">
-              <img src={support} className="m-auto mt-3 card-img-top" />
+              <img src={sustainable} className="m-auto mt-3 card-img-top" />
               <div className="card-body" id="cardres">
                 
-                <h5>Comprehensive After-Sales Support</h5>
+                <h5>Sustainable Practices</h5>
                 <div className="underline"></div>
                 <p>
-                  Our commitment to you doesn't end at the point of sale. We offer comprehensive after-sales support to ensure that any issues or concerns are promptly addressed. Our dedicated customer service team is always available to assist you, ensuring your complete satisfaction and peace of mind.
+                Sustainability is a core value at One Realty Developers. We are committed to environmentally responsible building practices that reduce waste, conserve resources, and promote energy efficiency. By using eco-friendly materials and sustainable construction methods, we aim to create buildings that are not only good for our clients but also for the planet.
                 </p>
               </div>
             </div>
@@ -83,12 +86,14 @@ function WhyChoose() {
           </div>
           <div className="col-lg-4 col-md-6 mt-4"  data-aos="flip-left">
             <div className="card shadow" id="cardshadow">
-              <img src={support} className="m-auto mt-3 card-img-top" />
+              <img src={assurance} className="m-auto mt-3 card-img-top" />
               <div className="card-body" id="cardres">
-                <h5>Comprehensive After-Sales Support</h5>
+                <h5>Quality Assurance</h5>
                 <div className="underline"></div>
                 <p>
-                  Our commitment to you doesn't end at the point of sale. We offer comprehensive after-sales support to ensure that any issues or concerns are promptly addressed. Our dedicated customer service team is always available to assist you, ensuring your complete satisfaction and peace of mind.
+                At One Realty Developers, we uphold the highest standards of quality in every project. Our meticulous attention to detail ensures that each building we construct is not only aesthetically pleasing but also durable and functional. We use top-grade materials and employ rigorous quality control processes to guarantee superior results.
+
+
                 </p>
               </div>
             </div>
@@ -169,6 +174,7 @@ const Wrapper = styled.div`
     /* color: #006c28; */
     color: #01614e;
     /* color: #d29b33; */
+    font-family: "Playfair Display";
     @media screen and (max-width: 768px) {
       font-size: 1.5rem;
     }
