@@ -19,11 +19,13 @@ function NirmanNagar() {
                 <h2>Welcome To Nirman Nagar</h2>
                
               </div>
-              <p>Nirman Nagar have a stylish home for luxurious and lavish living. the dwelling interior is brilliantly presented which ensures of delivering all luxury for contented living. The residence is well crafted as per the requirements of the client and meets their fantasy dreamland.</p>
+              <p>Nirman Nagar Our 4th project with 9 acres of occupancy with 183 units is a stylish home to luxurious and opulent living in duplex, singlex and plots, the interior of the residence is superbly presented providing all the luxury to satisfy ensures to do, the abode is well designed as per the client's requirements and their imagination makes the dream world come true.
+</p>
              
 
-              <p><span>Area</span> 9 Acre</p>
-              <p><span></span>Dec 2017 Project</p>
+              <p className ="fw-bold">Total 9 Acres</p>
+              <p className ="fw-bold"><span></span>Project Duration 2017 - 2021
+</p>
             </div>
           </div>
         </div>

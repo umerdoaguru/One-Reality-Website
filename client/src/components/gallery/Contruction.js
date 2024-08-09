@@ -8,18 +8,18 @@ import photo50 from '../../images/photo50.jpg';
 import photo51 from '../../images/photo51.jpg';
 
 import photo55 from '../../images/photo55.jpg';
-import photo56 from '../../images/photo56.jpg';
+import photo57 from '../../images/photo57.jpg';
 
 
 
 const images = [
 
-      photo48, photo49,
-       photo50,
-       photo51,
-       photo55,
-       photo56,
-       
+  { src: photo48, title: 'Construction' },
+  { src: photo49, title: 'Construction' },
+  { src: photo50, title: 'Construction' },
+  { src: photo51, title: 'Construction' },
+  { src: photo55, title: 'Construction' },
+  { src: photo57, title: 'Construction' },
       
 ];
 
@@ -30,24 +30,22 @@ function Contruction() {
     <Wrapper>
       <div className="container">
         <div className="row g-5">
-          {images.map((image, index) => (
-            <div key={index} className="col-lg-4">
-              <div className="card"
-              
-              >
-                <div className="img-container" data-aos="zoom-in">
-                  <img
-                    src={image}
-                    className={`card-img-top }`}
-                    alt={`Card image ${index + 1}`}
-                  />
-                  <div className={`hover-title }`}>
-                    Test {index + 1}
-                  </div>
-                </div>
-              </div>
+        {images.map((image, index) => (
+        <div key={index} className="col-lg-4">
+          <div className="card">
+            <div className="img-container" data-aos="zoom-in">
+              <img
+                src={image.src}
+                className="card-img-top imgset"
+                alt={`Card image ${index + 1}`}
+              />
             </div>
-          ))}
+            <div className="card-body">
+              <h5 className="card-title">{image.title}</h5>
+            </div>
+          </div>
+        </div>
+      ))}
         </div>
       </div>
     </Wrapper>
@@ -80,5 +78,8 @@ const Wrapper = styled.div`
   }
   .hovered + .hover-title {
     opacity: 1;
+  }
+  .card-title{
+    color: #01614e;
   }
 `;

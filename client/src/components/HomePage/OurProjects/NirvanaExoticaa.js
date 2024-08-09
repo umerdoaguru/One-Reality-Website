@@ -19,11 +19,14 @@ function NirvanaExoticaa() {
                 <h2>Welcome To Nirvana Exoticaa</h2>
                
               </div>
-              <p>Nirvana Exoticaa is one the most recent project to be developed by One Realty Developers. it`s a project consist of Designer Luxury Residential Vill Plots with all standard amentites.</p>
+              <p>Nirvana exotica is our 4th project found in December 2015,consists in4 acers 135 units with Singlex and plots one of the most recent projects to be developed by One Realty Developers. It’s a project consist of Designer Luxury Residential Villa Plots with all standard amenities.
+</p>
              
 
-              <p><span>Area</span> 4 Acre</p>
-              <p><span></span>30 Aug 2015 Project</p>
+              <p className ="fw-bold">Total 4.5 Acres 
+</p>
+              <p className ="fw-bold"><span></span>Project Duration 2017 - 2021
+</p>
             </div>
           </div>
         </div>

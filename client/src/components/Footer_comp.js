@@ -10,7 +10,7 @@ import {
   AiFillLinkedin,
  
 } from "react-icons/ai";
-import { FaPinterestSquare, FaTwitterSquare } from "react-icons/fa";
+import { FaPinterestSquare, FaTwitterSquare, FaWhatsapp } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
@@ -60,18 +60,16 @@ function Footer_comp() {
                  
                   className=""
                 >
-                 07614924920 
-                 
-                </Link>
+                 07614924920 ,</Link>
               
               </span>
               <span className="">
                 <Link
-                  to="tel:+91-7987537383"
+                  to="tel:+91-7880002259"
                  
                   className=""
                 >
-                  7987537383
+                7880002259
                 </Link>
               </span>
               <br />
@@ -98,7 +96,7 @@ function Footer_comp() {
           <div className="hd">
             {" "}
             <Link
-              to="/Best-Software-Company-In-Jabalpur"
+              to="/"
               onClick={handleFooterLink}
               className=""
              
@@ -110,7 +108,7 @@ function Footer_comp() {
           <div className="hd">
             {" "}
             <Link
-              to="/mobile-development"
+              to="/about"
               onClick={handleFooterLink}
               className=""
              
@@ -120,7 +118,7 @@ function Footer_comp() {
           </div>
           <div>
             <Link
-              to="/Best-Digital-Marketing-Company-in-Jabalpur"
+              to="/contact"
               onClick={handleFooterLink}
              
               className=""
@@ -130,7 +128,7 @@ function Footer_comp() {
           </div>
           <div>
             <Link
-              to="/Best-SEO-Company-in-Jabalpur"
+              to="/blogs"
               onClick={handleFooterLink}
              
               className=""
@@ -141,7 +139,7 @@ function Footer_comp() {
           <div>
             {" "}
             <Link
-              to="/graphic-designing"
+              to="/gallery"
               onClick={handleFooterLink}
              
               className=""
@@ -156,7 +154,7 @@ function Footer_comp() {
           <div>
             {" "}
             <Link
-              to="/about_us"
+              to="/aura-city"
               onClick={handleFooterLink}
              
               className=""
@@ -167,7 +165,7 @@ function Footer_comp() {
           <div>
             {" "}
             <Link
-              to="/contact_us"
+              to="/nirvana-city"
               onClick={handleFooterLink}
              
               className=""
@@ -178,7 +176,7 @@ function Footer_comp() {
           <div>
             {" "}
             <Link
-              to="/career"
+              to="/nirvana-exoticaa"
               onClick={handleFooterLink}
              
               className=""
@@ -190,12 +188,23 @@ function Footer_comp() {
           <div>
             {" "}
             <Link
-              to="/portfolio"
+              to="/nirman-nagar"
               onClick={handleFooterLink}
              
               className=""
             >
               Nirman nagar
+            </Link>
+          </div>
+          <div>
+            {" "}
+            <Link
+              to="/nirvana-home"
+              onClick={handleFooterLink}
+             
+              className=""
+            >
+             Nirvana Homes
             </Link>
           </div>
          
@@ -249,14 +258,33 @@ function Footer_comp() {
                   }
                 />
               </Link>
+              <Link
+               to=  "https://wa.me/+917880008031?text=Hello%20there!%20I%20found%20your%20website%20and%20I%20want%20to%20discuss."
+                onClick={handleFooterLink}
+                target="_blank"
+                rel="norefferel"
+                className=" m-2"
+              >
+                <FaWhatsapp
+                  size="30px"
+                  onMouseOver={({ target }) =>
+                    (target.style.color = "#25D366")
+                  }
+                  onMouseOut={({ target }) =>
+                    (target.style.color = "white")
+                  }
+                />
+              </Link>
               
               
             </div>
           </div>
         </div>
       </div>
-      {/* 
-       */}
+      <div className="bottom">
+          <p><Link to='https://doaguru.com/' target='_blank'>© DOAGuru InfoSystems</Link> || Powered by One Realty</p>
+         
+        </div>
     </footer>
   </Container>
   )
@@ -296,12 +324,13 @@ const Container = styled.div`
   line-height: 32px;
 }
 
-.bottom{
-  width: 100%;
-  text-align: right;
-  color: #f6f1f1;
-  padding: 0 40px 5px 0;
-}
+.bottom {
+    width: 100%;
+    text-align: center;
+    color: #f6f1f1;
+    padding: 20px 0;
+    background-color: #01614e;
+  }
 
 .image img {
   width: 14rem;

@@ -74,35 +74,47 @@ import photo71 from '../../images/photo71.jpeg';
 
 
 const images = [
-  photo1,photo32,  photo2, photo4, photo5, photo6,
-  photo7,  photo12,  photo15, photo16,  photo18,
-   photo27,
-      photo31, 
-    photo33, photo34, photo35, photo36, photo37,
-     photo38, photo39, photo40,photo41, photo42, 
-     photo43, photo47,
-      photo48, photo49,
-       photo50,
-       photo51,
-       photo55,
-       photo57,
-       photo58,
-       photo59,
-       photo60,
-       photo61,
-       photo62,
-       photo63,
-       photo64,
-       
-       photo66,
-       photo67,
-       photo68,
+  { src: photo1, title: '3 BHK Luxury Duplex' },
+  { src: photo32, title: 'Entry Gate' },
+  { src: photo2, title: 'Layout Plan' },
+  { src: photo4, title: 'Amenities' },
+  { src: photo5, title: 'Shiva Temple' },
+  { src: photo6, title: 'Garden' },
+  { src: photo7, title: 'Garden Side View' },
+  { src: photo12, title: 'Garden Full View' },
+  { src: photo15, title: '3 BHK Luxury Duplex' },
+ 
+  { src: photo18, title: 'Nirvana Home Entry Gate' },
+  { src: photo27, title: 'Shiva Temple' },
+  { src: photo31, title: 'Garden' },
+ 
+  { src: photo35, title: 'Entry Gate' },
+  { src: photo36, title: 'Nirvana Home Office' },
+  { src: photo37, title: 'Nirvana Home Office View' },
+  { src: photo38, title: 'Nirvana Home Office View' },
+  { src: photo39, title: 'Nirvana Home Office View' },
+  { src: photo40, title: 'Nirvana Home Office View' },
+  { src: photo41, title: 'Nirvana Home Office View' },
+  { src: photo42, title: 'Nirvana Home Office View' },
+  { src: photo43, title: 'Nirvana Home Office View' },
 
-       photo70,
-      
-      
-      
+  { src: photo48, title: 'Construction' },
+  { src: photo49, title: 'Construction' },
+  { src: photo50, title: 'Construction' },
+  { src: photo51, title: 'Construction' },
+  { src: photo55, title: 'Construction' },
+  { src: photo57, title: 'Construction' },
+  { src: photo58, title: '3 BHK Luxury Duplex' },
+  { src: photo59, title: 'Garden View' },
+
+  { src: photo61, title: 'Front View' },
+  
+  { src: photo63, title: 'Shiva Temple Side View' },
+
+  { src: photo66, title: 'Garden View' },
+
 ];
+
 
 function All() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -111,27 +123,22 @@ function All() {
     <Wrapper>
       <div className="container">
         <div className="row g-5" >
-          {images.map((image, index) => (
-            <div key={index} className="col-lg-4">
-              <div className="card"
-                // onMouseEnter={() => setHoveredIndex(index)}
-                // onMouseLeave={() => setHoveredIndex(null)}
-              >
-                <div className="img-container" data-aos="zoom-in">
-                  <img
-                    src={image}
-                    // className={`card-img-top ${hoveredIndex === index ? "hovered" : ""}`}
-                    className={`card-img-top }`}
-                    alt={`Card image ${index + 1}`}
-                  />
-                  {/* <div className={`hover-title ${hoveredIndex === index ? "visible" : ""}`}> */}
-                  <div className={`hover-title `}>
-                    Test {index + 1}
-                  </div>
-                </div>
-              </div>
+        {images.map((image, index) => (
+        <div key={index} className="col-lg-4">
+          <div className="card">
+            <div className="img-container" data-aos="zoom-in">
+              <img
+                src={image.src}
+                className="card-img-top imgset"
+                alt={`Card image ${index + 1}`}
+              />
             </div>
-          ))}
+            <div className="card-body">
+              <h5 className="card-title">{image.title}</h5>
+            </div>
+          </div>
+        </div>
+      ))}
         </div>
       </div>
     </Wrapper>
@@ -147,6 +154,9 @@ const Wrapper = styled.div`
   .card {
     position: relative;
     border: none;
+  }
+  .card-title{
+    color: #01614e;
   }
   .img-container {
     position: relative;

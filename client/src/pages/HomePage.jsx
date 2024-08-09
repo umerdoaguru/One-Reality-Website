@@ -1,5 +1,8 @@
 import React from "react";
-import img from "../images/slider_img01.jpg";
+// import img from "../images/slider_img01.webp";
+import img from "../images/imgnew1.webp";
+
+
 import img1 from "../images/Untitled design (10).png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +13,7 @@ import WhyChoose from "../components/HomePage/WhyChoose";
 import OurProjects from "../components/HomePage/OurProjects";
 import LastHeropage from "../components/HomePage/LastHeropage";
 import OurVideo from "../components/HomePage/OurVideo";
+import styled from "styled-components";
 
 function HomePage() {
   // const settings = {
@@ -25,7 +29,7 @@ function HomePage() {
   // };
 
   return (
-    <>
+    <Wrapper>
       {/*       
       <Slider {...settings}>
         <div>
@@ -45,7 +49,7 @@ function HomePage() {
           backgroundImage: `url(${img})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          height: "60vh",
+        
         }}
       >
         <div class="container">
@@ -112,9 +116,23 @@ function HomePage() {
       <Bank_Partner/>
       <OurVideo/>
       <LastHeropage/>
+     
 
-    </>
+
+    </Wrapper>
   );
 }
 
 export default HomePage;
+
+const Wrapper = styled.div`
+  #cont{
+    height: 60vh;
+    @media screen and (max-width: 768px) {
+      height: 20vh;
+      
+    }
+  }
+
+
+`

@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 function ContactSection() {
+  const handleFooterLink = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <>
       <Container  data-aos="zoom-in">
@@ -19,10 +23,16 @@ function ContactSection() {
             <main className="px-3 w-100 w-md-75 w-lg-50 mt-4 " style={{color:"#01614e"}}>
               <h6>Don't hesitage to contact us</h6>
               <h2>MAKE AN APPOINTMENT NOW</h2>
-              <h2>7896541230</h2>
+              <h2> 07614924920,7880002259</h2>
 
               <button className="btn btn-lg   rounded-pill mt-3 ">
+              <Link
+                to="/contact"
+                onClick={handleFooterLink}
+                style={{ textDecoration: "none", color:"white"}}
+              >
                 Contact Us
+                </Link>
               </button>
             </main>
           </center>

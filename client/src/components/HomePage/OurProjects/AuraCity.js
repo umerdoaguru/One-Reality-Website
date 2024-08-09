@@ -22,11 +22,14 @@ function AuraCity() {
                 <h2>Welcome To Our Aura City</h2>
                
               </div>
-              <p>Aura City is Located 15 km from Sadar, at Barela road on the national highway NH 12A is One Realty Aura. This 4-acre township with all modern amenities consists of 68 plots, a residential apartment. its unique location, just on the brink of the highway , view of Maa Sharda Barela Temple easy accessibility and affordable pricing makes it a future township and a place to invest in.</p>
+              <p>Aura City Located 15 km from Sadar, at Barela road on the national highway NH 12A is One Realty Aura. This 4-acre township with all modern amenities consists of 68 plots, a residential apartment. Its unique location, just on the brink of the highway, view of Maa Sharda Barela Temple easy accessibility and affordable pricing makes it a future township and a place to invest in. Economic but impressive.
+  
+</p>
              
 
-              <p><span>Area</span> 4 Acre</p>
-              <p><span></span>Dec 2011 Project</p>
+              <p className ="fw-bold">Total 3 Acres</p>
+              <p className ="fw-bold"><span></span>Project Duration 2011 - 2014
+</p>
             </div>
           </div>
         </div>

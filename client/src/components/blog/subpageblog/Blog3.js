@@ -349,7 +349,9 @@ const Wrapper = styled.div`
 
   h2 {
     font-size: 34px;
-    color: #1e1666;
+    color: #01614e;
+    font-family: "Playfair Display";
+
     @media screen and (max-width: 768px) {
       font-size: 1.4rem;
     }

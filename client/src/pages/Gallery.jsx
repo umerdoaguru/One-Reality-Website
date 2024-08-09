@@ -1,6 +1,6 @@
 import React from "react";
 import Heros from "../components/Heros";
-import AboutUs from "../images/gallery2.jpg";
+import AboutUs from "../images/gallery2.webp";
 import Cards from "../components/gallery/Cards";
 import Header from "../components/Header";
 import Footer from "../components/Footer";

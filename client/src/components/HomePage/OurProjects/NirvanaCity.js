@@ -19,11 +19,15 @@ function NirvanaCity() {
                 <h2>Welcome To Nirvana City</h2>
                
               </div>
-              <p>Nirvana city is a spacious living area for independent and free-living, with all the necessary amenities fulfills your needs. Nirvana city assures you of satisfying your dream home in the fashionable way possible.</p>
+              <p>Nirvana city is our second project December 2014 consists 6acers with occupancy 136 units planing with Singlex and plots  a spacious living area for independent and free-living, with all the necessary amenities fulfills your needs. Nirvana city assures you of satisfying your dream home in the fashionable way possible.
+</p>
              
 
-              <p><span>Area</span> 6 Acre</p>
-              <p><span></span>Dec 2014 Project</p>
+              <p className ="fw-bold"> Total  5.5 Acres
+</p>
+              <p className ="fw-bold"><span></span>Project Duration 2015 - 2017
+
+</p>
             </div>
           </div>
         </div>

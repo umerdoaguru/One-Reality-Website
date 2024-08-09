@@ -76,7 +76,7 @@ const AdminDashboard = () => {
             type="date"
             value={dateFilter}
             onChange={handleDateFilterChange}
-            className="form-control"
+            className="form-control dateset"
           /></div>
             </div>
         
@@ -91,6 +91,7 @@ const AdminDashboard = () => {
                     <th>ID</th>
                     <th>User Name</th>
                     <th>Email Id</th>
+                    <th>Mobile Number</th>
                     <th>Subject</th>
                     <th>Message</th>
                     <th>Created Date</th>
@@ -102,6 +103,7 @@ const AdminDashboard = () => {
                       <td>{offset + index + 1}</td>
                       <td>{userdata.name}</td>
                       <td>{userdata.email}</td>
+                      <td>{userdata.mobile_no}</td>
                       <td>{userdata.subject}</td>
                       <td>{userdata.message}</td>
                       <td>{moment(userdata.created_date).format('DD/MM/YYYY')}</td>
@@ -155,6 +157,11 @@ const Wrapper = styled.div`
     margin-top: 20px;
     font-size: 18px;
     color: #01614e;
+  }
+  .dateset{
+    @media screen and (max-width: 768px) {
+      margin-top: 1rem;
+    }
   }
 `;
 

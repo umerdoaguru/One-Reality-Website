@@ -34,7 +34,12 @@ const Container = styled.div`
     font-size: 4rem;
     margin-top: 12rem;
      margin-left: 5rem;
-     
+     @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    margin-top: 12rem;
+    margin-left: 1rem;
+
+    }
 
   
   }

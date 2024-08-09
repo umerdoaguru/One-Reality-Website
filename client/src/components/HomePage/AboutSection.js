@@ -1,16 +1,23 @@
 import React from 'react';
-import img from '../../images/about_img02.png'
+// import img from '../../images/about_img02.png'
+import img from '../../images/aboutsection.jpeg'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
+  const handleFooterLink = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <Wrapper>
     
        <section id="about" className="mt-5">
       <div className="container">
-<div className="heading text-center">
-  
-  <h1>One Realty Developers: The Best Developers in Jabalpur</h1>
+        <div className="row">
+
+<div className="col-lg-9 heading text-center">
+<h1>One Realty Developers: The Best Developers in Jabalpur</h1>
+ 
   <div
                 className="underline mx-auto"
                 style={{
@@ -21,6 +28,12 @@ const AboutSection = () => {
                   marginBottom: 20,
                 }}
               ></div>
+</div>
+<div className="col-lg-3 flash-animation">
+<h2 className=' text-center ongoing'><Link to='/nirvana-home' onClick={handleFooterLink}>Ongoing Project</Link></h2>
+
+</div>
+
 </div>
 <div className="content mb-3" data-aos="fade-down">
 
@@ -74,6 +87,15 @@ export default AboutSection;
 const Wrapper = styled.div`
 img{
   width: 100%;
+  height: 32rem;
+  @media screen and (max-width: 768px) {
+      height: 20rem;
+      
+    }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+height: 40rem;
+  }
+  
 }
 h1{
   /* color: #006c28; */
@@ -86,12 +108,45 @@ h2{
   /* color: #006c28; */
   color: #01614e;
   font-family: "Playfair Display";
+  
 }
 li{
   margin-top: 1rem;
 }
 span{
   font-weight: bold;
+  
+}
+@keyframes flash {
+  0% { 
+    opacity: 1; 
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0; 
+    transform: scale(1.2); /* Increase size by 20% */
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1);
+  }
 }
 
+.flash-animation {
+  animation: flash 3s infinite;
+}
+
+.ongoing{
+  white-space: nowrap;
+}
+a {
+    text-decoration: none;
+    color: #01614e;
+   
+    
+  }
+/* white-space: nowrap;
+    overflow: hidden;
+    width: 1;
+    animation: typing 3s steps(30,end) infinite; */
 `

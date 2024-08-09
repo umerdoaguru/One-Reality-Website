@@ -42,11 +42,14 @@ function OurProjects() {
                 <h2>Welcome To Our Aura City</h2>
                
               </div>
-              <p>Aura City is Located 15 km from Sadar, at Barela road on the national highway NH 12A is One Realty Aura. This 4-acre township with all modern amenities consists of 68 plots, a residential apartment. its unique location, just on the brink of the highway , view of Maa Sharda Barela Temple easy accessibility and affordable pricing makes it a future township and a place to invest in.</p>
+              <p>Aura City Located 15 km from Sadar, at Barela road on the national highway NH 12A is One Realty Aura. This 4-acre township with all modern amenities consists of 68 plots, a residential apartment. Its unique location, just on the brink of the highway, view of Maa Sharda Barela Temple easy accessibility and affordable pricing makes it a future township and a place to invest in. Economic but impressive.
+  
+</p>
              
 
-              <p><span>Area</span> 4 Acre</p>
-              <p><span></span>Dec 2011 Project</p>
+              <p className ="fw-bold">Total 3 Acres</p>
+              <p className ="fw-bold"><span></span>Project Duration 2011 - 2014
+</p>
             </div>
           </div>
         </div>
@@ -59,11 +62,15 @@ function OurProjects() {
                 <h2>Welcome To Nirvana City</h2>
                
               </div>
-              <p>Nirvana city is a spacious living area for independent and free-living, with all the necessary amenities fulfills your needs. Nirvana city assures you of satisfying your dream home in the fashionable way possible.</p>
+              <p>Nirvana city is our second project December 2014 consists 6acers with occupancy 136 units planing with Singlex and plots  a spacious living area for independent and free-living, with all the necessary amenities fulfills your needs. Nirvana city assures you of satisfying your dream home in the fashionable way possible.
+</p>
              
 
-              <p><span>Area</span> 6 Acre</p>
-              <p><span></span>Dec 2014 Project</p>
+              <p className ="fw-bold"> Total  5.5 Acres
+</p>
+              <p className ="fw-bold"><span></span>Project Duration 2015 - 2017
+
+</p>
             </div>
           </div>
           <div className="col-lg-6">
@@ -88,11 +95,14 @@ function OurProjects() {
                 <h2>Welcome To Nirvana Exoticaa</h2>
                
               </div>
-              <p>Nirvana Exoticaa is one the most recent project to be developed by One Realty Developers. it`s a project consist of Designer Luxury Residential Vill Plots with all standard amentites.</p>
+              <p>Nirvana exotica is our 4th project found in December 2015,consists in4 acers 135 units with Singlex and plots one of the most recent projects to be developed by One Realty Developers. It’s a project consist of Designer Luxury Residential Villa Plots with all standard amenities.
+</p>
              
 
-              <p><span>Area</span> 4 Acre</p>
-              <p><span></span>30 Aug 2015 Project</p>
+              <p className ="fw-bold">Total 4.5 Acres 
+</p>
+              <p className ="fw-bold"><span></span>Project Duration 2017 - 2021
+</p>
             </div>
           </div>
         </div>
@@ -109,11 +119,13 @@ function OurProjects() {
                 <h2>Welcome To Nirman Nagar</h2>
                
               </div>
-              <p>Nirman Nagar have a stylish home for luxurious and lavish living. the dwelling interior is brilliantly presented which ensures of delivering all luxury for contented living. The residence is well crafted as per the requirements of the client and meets their fantasy dreamland.</p>
+              <p>Nirman Nagar Our 4th project with 9 acres of occupancy with 183 units is a stylish home to luxurious and opulent living in duplex, singlex and plots, the interior of the residence is superbly presented providing all the luxury to satisfy ensures to do, the abode is well designed as per the client's requirements and their imagination makes the dream world come true.
+</p>
              
 
-              <p><span>Area</span> 9 Acre</p>
-              <p><span></span>Dec 2017 Project</p>
+              <p className ="fw-bold">Total 9 Acres</p>
+              <p className ="fw-bold"><span></span>Project Duration 2017 - 2021
+</p>
             </div>
           </div>
 
@@ -139,14 +151,16 @@ function OurProjects() {
           <div className="about-content s-about-content pl-30" data-aos= "fade-down">
               <div className="about-title second-atitle">
                 
-                <h2>Welcome To Nirvana Home</h2>
+                <h2>Welcome To Nirvana Homes</h2>
                
               </div>
-              <p>Nirvana Home a Luxury Project at Budget Pricing By One Realty Developers. This 11 Acre Residential Township Consists of 365 Units. The whole township is Vastu - Compliance in a Clean & Green Enivronment of Barela 14 K.m. from Sadar.</p>
+              <p>Nirvana Homes a Luxury Project at Budget Pricing by One Realty Developers. This 11 Acre Residential Township Consists of 365 units. The whole township is Vastu – Compliance in a Clean & Green Environment of Barela 14 KM. from Sadar. The Roads are Concrete with ample space for Recreation and Sports & Lush- Green Gardens comprising, One Fruit Garden, a Garden with a Jogging Track & Children’s Play Area another with a Shiva Temple for those who have utmost faith in the Supreme and to bring vitality and spiritual energy in the township.
+</p>
              
 
-              <p><span>Area</span> 11 Acre</p>
-              <p><span></span>Completion in Dec, 2024 Project</p>
+              <p className ="fw-bold">Total 11 Acres</p>
+              <p className ="fw-bold"><span></span>Ongoing Project</p>
+
             </div>
           </div>
         </div>

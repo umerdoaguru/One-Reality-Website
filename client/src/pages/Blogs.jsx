@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "../images/blogs.jpg";
+import AboutUs from "../images/blogs.webp";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";

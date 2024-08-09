@@ -40,7 +40,7 @@ function Blog() {
       <div className="container">
       <div className="heading text-center mt-5">
   
-  <h1>Welcome to One Realty Developer About Us Page</h1>
+  <h1>Welcome to One Realty Developer Blogs Page</h1>
   <div
                 className="underline mx-auto"
                 style={{
@@ -63,7 +63,7 @@ function Blog() {
                 <img src={blog2} alt="" style={{ width: "100%" }} />
               </span>
               <div className=" mx-3 lg:mx-5 mb-5">
-                <div className="d-flex text-secondary mt-3  ">
+                {/* <div className="d-flex text-secondary mt-3  ">
                   <span className="d-flex ">
                     <CiUser className="mt-1" />
                     <p className="mx-1">Subham soni</p>
@@ -72,7 +72,7 @@ function Blog() {
                     <FaRegComments className="mt-1 " />
                     <p className="mx-1">35 comments</p>
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="">
                 Home Renovation Ideas to Increase Property Value
@@ -100,7 +100,7 @@ function Blog() {
                 <img src={blog4} alt="" style={{ width: "100%" }} />
               </span>
               <div className=" mx-3 lg:mx-5 mb-5">
-                <div className="d-flex text-secondary mt-3  ">
+                {/* <div className="d-flex text-secondary mt-3  ">
                   <span className="d-flex ">
                     <CiUser className="mt-1" />
                     <p className="mx-1">Subham soni</p>
@@ -109,7 +109,7 @@ function Blog() {
                     <FaRegComments className="mt-1 " />
                     <p className="mx-1">35 comments</p>
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="">
                 Essential Checklist for Moving into Your New Home
@@ -142,7 +142,7 @@ function Blog() {
                 <img src={blog3} alt="" style={{ width: "100%" }} />
               </span>
               <div className=" mx-3 lg:mx-5 mb-5">
-                <div className="d-flex text-secondary mt-3  ">
+                {/* <div className="d-flex text-secondary mt-3  ">
                   <span className="d-flex ">
                     <CiUser className="mt-1" />
                     <p className="mx-1">Subham soni</p>
@@ -151,7 +151,7 @@ function Blog() {
                     <FaRegComments className="mt-1 " />
                     <p className="mx-1">35 comments</p>
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="">
                 Understanding Real Estate Market Trends in 2024
@@ -187,7 +187,7 @@ function Blog() {
                 <img src={blog5} alt="" style={{ width: "100%" }} />
               </span>
               <div className=" mx-3 lg:mx-5 mb-5">
-                <div className="d-flex text-secondary mt-3  ">
+                {/* <div className="d-flex text-secondary mt-3  ">
                   <span className="d-flex ">
                     <CiUser className="mt-1" />
                     <p className="mx-1">Subham soni</p>
@@ -196,7 +196,7 @@ function Blog() {
                     <FaRegComments className="mt-1 " />
                     <p className="mx-1">35 comments</p>
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="">
                 Green Living: The Benefits of Eco-Friendly Homes and Sustainable Real Estate
@@ -226,7 +226,7 @@ function Blog() {
                 <img src={blog1} alt="" style={{ width: "100%" }} />
               </span>
               <div className=" mx-3 lg:mx-5 mb-5">
-                <div className="d-flex text-secondary mt-3  ">
+                {/* <div className="d-flex text-secondary mt-3  ">
                   <span className="d-flex ">
                     <CiUser className="mt-1" />
                     <p className="mx-1">Subham soni</p>
@@ -235,7 +235,7 @@ function Blog() {
                     <FaRegComments className="mt-1 " />
                     <p className="mx-1">35 comments</p>
                   </span>
-                </div>
+                </div> */}
 
                 <h2 className="">
                  10 Tips for First-Time Home Buyers
@@ -285,7 +285,7 @@ function Blog() {
 
               <div className="  d-flex justify-content-center mb-3 fs-3 mt-3">
               <Link
-                to="https://www.instagram.com/onerealtydevelopers/"
+                to="https://www.facebook.com/Onerealty/"
                 onClick={handleFooterLink}
                 target="_blank"
                 rel="norefferel"
@@ -293,7 +293,7 @@ function Blog() {
               >  <CiFacebook className=" icons mx-3  rounded-circle" /></Link>
                
                <Link
-                to="https://www.facebook.com/Onerealty/"
+                to="https://www.instagram.com/onerealtydevelopers/"
                 onClick={handleFooterLink}
                 target="_blank"
                 rel="norefferel"
@@ -337,6 +337,9 @@ const Container = styled.div`
   h3 {
     font-family: "Playfair Display";
     color: #06933d;
+  }
+  h2{
+    margin-top: 2rem;
   }
     
 h1{

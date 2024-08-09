@@ -1,7 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 function LastHeropage() {
+  const handleFooterLink = () => {
+    window.scrollTo(0, 0);
+  };
   return (
    <Wrapper>
    
@@ -22,13 +26,26 @@ function LastHeropage() {
               ></div>
 </div>
 <h4>Choose One Realty Developers Today!</h4>
-<div className="content mb-5 mt-4">
+<div className="content mb-3 mt-4">
 
   <p>Looking for the top builders in Jabalpur to bring your dreams to life? Your search ends here. One Realty Developers stands as the best construction company in Jabalpur, ensuring quality and innovation in the realm of construction. Whether it’s selling, buying, or renting residential or commercial property in Jabalpur, we’re the best builders and developers in the city, ready to transform your vision into reality.</p>
 </div>
 
 
-
+<button
+              type="button"
+              className="btn   mb-3"
+              style={{ backgroundColor:" #01614e", borderRadius:"1.5rem"  }}
+            >
+              <Link
+                to="/contact"
+                onClick={handleFooterLink}
+                style={{ textDecoration: "none", color:"white"}}
+              >
+                {" "}
+                Enquire Now
+              </Link>
+            </button>
 
         
       </div>

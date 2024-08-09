@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 // import About2 from ".../../images/about2.png";
-import About2 from "../../images/about2.png";
+// import About2 from "../../images/about2.png";
+import About2 from "../../images/aboutsection.jpeg";
 
 const AboutSection = () => {
   return (
@@ -71,7 +72,17 @@ const AboutSection = () => {
 export default AboutSection;
 
 const Container = styled.div`
-  
+img{
+  width: 100%;
+  height: 32rem;
+  @media screen and (max-width: 768px) {
+      height: 20rem;
+      
+    }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+height: 40rem;
+  }
+}
 h1{
   /* color: #006c28; */
   color: #01614e;

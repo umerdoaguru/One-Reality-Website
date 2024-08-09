@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "../images/aboutnew1.jpg";
+import AboutUs from "../images/aboutnew1.webp";
 import About1 from "../images/About1.png";
 
 import AboutSection from "../components/AboutPage/AboutSection";
@@ -10,6 +10,7 @@ import OurProjects from "../components/AboutPage/OurProjects";
 
 
 function About() {
+  
   return (
     <>
       <Heros title="About Us" backgroundImage={AboutUs} />

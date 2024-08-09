@@ -95,4 +95,7 @@ const Wrapper = styled.div`
   .hovered + .hover-title {
     opacity: 1;
   }
+  .card-title{
+    color: #01614e;
+  }
 `;

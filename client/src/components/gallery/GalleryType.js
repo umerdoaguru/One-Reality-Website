@@ -32,13 +32,13 @@ function GalleryType() {
               ></div>
                   <div className="container-fluid mt-4  navsect background ">
                     <Nav
-                      className="d-flex justify-content-center side-cont"
+                      className="d-flex justify-content-center side-cont selectors"
                       activeKey={selectedTab}
                       onSelect={(selectedKey) => setSelectedTab(selectedKey)}
                     >
                       <div className="d-flex flex-row mx-3 mb-2">
                         <Nav.Item>
-                          <Nav.Link eventKey="tab1" className="navlink shadow">
+                          <Nav.Link eventKey="tab1" className="navlink shadow allnav">
                          All
                           </Nav.Link>
                         </Nav.Item>
@@ -55,7 +55,7 @@ function GalleryType() {
                             eventKey="tab3"
                             className={`navlink shadow`}
                           >
-                        Graden
+                        Garden
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -63,7 +63,7 @@ function GalleryType() {
                             eventKey="tab4"
                             className={`navlink shadow mx-2`}
                           >
-                           Contruction
+                          Construction
                           </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -122,5 +122,20 @@ const Wrapper  = styled.div`
     color: #01614e;
     /* color: #d29b33; */
     font-family: "Playfair Display";
+  }
+  .selectors{
+    @media screen and (max-width: 768px) {
+      overflow-x: auto;
+      height: 5rem;
+    }
+  
+  }
+  .allnav{
+    @media screen and (max-width: 768px) {
+     margin-left: 14rem;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1020px) {
+     margin-left: 0rem;
+    }
   }
 `

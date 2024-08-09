@@ -397,7 +397,18 @@ function Header() {
                   <ul className="d-flex gap-4">
                     <li>
                       <IoCallOutline />
-                      <span>07614924920, 7987537383</span>
+                      <span>  <Link
+                  to="tel:+91-07614924920"
+                 
+                  className="text-white"
+                >
+                
+                 
+              07614924920  </Link></span>,<span><Link
+                  to="tel:+91-7880002259"
+                 
+                  className="text-white"
+                >7880002259</Link></span>
                     </li>
                     <li>
                       <CiMail />
@@ -409,7 +420,7 @@ function Header() {
                     </li>
                     <li>
                       <IoMdTime />
-                      <span>Mon-Fri: 8am - 7pm</span>
+                      <span>Mon-Sat: 10am - 7pm</span>
                     </li>
                   </ul>
                 </div>
@@ -437,7 +448,7 @@ function Header() {
                         <NavDropdown.Item as={Link} to="/nirman-nagar">Nirman Nagar</NavDropdown.Item>
                       </NavDropdown>
                       <NavDropdown title="Ongoing Project" id="ongoing-project-dropdown" drop="end">
-                      <NavDropdown.Item as={Link} to="/nirvana-home">Nirvana Home</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/nirvana-home">Nirvana Homes</NavDropdown.Item>
                         </NavDropdown>
                       
                       <NavDropdown title="Upcoming Project" id="upcoming-project-dropdown" drop="end">
@@ -486,4 +497,5 @@ const Wrapper = styled.div`
       display: none;
     }
   }
+  
 `;

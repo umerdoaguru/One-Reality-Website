@@ -54,7 +54,7 @@ function Footer() {
                 </span>
                 <span className="">
                   <Link to="tel:+91-7987537383" className="">
-                    7987537383
+                  7880002259
                   </Link>
                 </span>
                 <br />

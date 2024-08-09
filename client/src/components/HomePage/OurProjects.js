@@ -33,7 +33,7 @@ function OurProjects() {
                       activeKey={selectedTab}
                       onSelect={(selectedKey) => setSelectedTab(selectedKey)}
                     >
-                      <div className="d-flex flex-row mx-3">
+                      <div className="d-flex flex-row mx-3 selectors">
                         <Nav.Item>
                           <Nav.Link eventKey="tab1" className="navlink shadow">
                            Aura City
@@ -68,7 +68,7 @@ function OurProjects() {
                             eventKey="tab5"
                             className={`navlink shadow mx-2`}
                           >
-                            Nirman Home
+                            Nirvana Homes
                           </Nav.Link>
                         </Nav.Item>
                       </div>
@@ -110,5 +110,12 @@ const Wrapper  = styled.div`
     color: #01614e;
     /* color: #d29b33; */
     font-family: "Playfair Display";
+  }
+  .selectors{
+    @media screen and (max-width: 768px) {
+      overflow-x: auto;
+      height: 5rem;
+    }
+  
   }
 `

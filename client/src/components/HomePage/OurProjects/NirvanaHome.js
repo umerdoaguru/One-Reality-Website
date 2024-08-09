@@ -18,14 +18,16 @@ function NirvanaHome() {
             <div className="about-content s-about-content pl-30" data-aos= "fade-left">
               <div className="about-title second-atitle">
                 
-                <h2>Welcome To Nirvana Home</h2>
+                <h2>Welcome To Nirvana Homes</h2>
                
               </div>
-              <p>Nirvana Home a Luxury Project at Budget Pricing By One Realty Developers. This 11 Acre Residential Township Consists of 365 Units. The whole township is Vastu - Compliance in a Clean & Green Enivronment of Barela 14 K.m. from Sadar.</p>
+              <p>Nirvana Homes a Luxury Project at Budget Pricing by One Realty Developers. This 11 Acre Residential Township Consists of 365 units. The whole township is Vastu – Compliance in a Clean & Green Environment of Barela 14 KM. from Sadar. The Roads are Concrete with ample space for Recreation and Sports & Lush- Green Gardens comprising, One Fruit Garden, a Garden with a Jogging Track & Children’s Play Area another with a Shiva Temple for those who have utmost faith in the Supreme and to bring vitality and spiritual energy in the township.
+</p>
              
 
-              <p><span>Area</span> 11 Acre</p>
-              <p><span></span>Completion in Dec, 2024 Project</p>
+              <p className ="fw-bold">Total 11 Acres</p>
+              <p className ="fw-bold"><span></span>Ongoing Project</p>
+
             </div>
           </div>
         </div>

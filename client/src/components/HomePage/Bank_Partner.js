@@ -4,11 +4,11 @@ import pnb from '../../images/pnb.webp'
 import bank_of_india from '../../images/bank_of_india.webp'
 import barodra from '../../images/barodra.webp'
 import hdfc from '../../images/hdfc.webp'
-import yes from '../../images/yes.webp'
+import indian_bank from '../../images/indian_bank1.png'
 import icici from '../../images/icici.webp'
 import union from '../../images/union.webp'
 import lic from '../../images/lic.webp'
-import kotak from '../../images/kotak.webp'
+import iifl_bank from '../../images/iifl_bank.jpg'
 import Axis_Bank from '../../images/Axis_Bank.png'
 import Bandhan_Bank from '../../images/Bandhan_Bank.png'
 import styled from 'styled-components'
@@ -56,13 +56,17 @@ Our Banking Partner
     <div className="col-lg-3 col-md-4 text-center  " data-aos="zoom-in">
           <img src={lic} alt="" />
     </div>
-    <div className="col-lg-3 col-md-4 text-center  " data-aos="zoom-in">
-          <img src={yes} alt="" />
+    <div className="col-lg-3 col-md-4 text-center marginset " data-aos="zoom-in">
+          <img src={indian_bank} alt="" />
     </div>
-    <div className="col-lg-3 col-md-4 text-center  " data-aos="zoom-in">
-          <img src={kotak} alt="" />
+    <div className="col-lg-3 col-md-4 text-center marginset1 " data-aos="zoom-in">
+          <img src={iifl_bank} alt="" />
     </div>
-    <div className="col-lg-3 col-md-4 text-center  " data-aos="zoom-in">
+   
+   
+
+   
+    <div className="col-lg-3 col-md-4 text-center hdfc " data-aos="zoom-in">
           <img src={hdfc} alt="" />
     </div>
     <div className="col-lg-3 col-md-4 text-center  " data-aos="zoom-in">
@@ -71,10 +75,12 @@ Our Banking Partner
     <div className="col-lg-3 col-md-4 text-center  " data-aos="zoom-in">
           <img src={Axis_Bank} alt="" />
     </div>
-    <div className="col-lg-3 col-md-4 text-center  " data-aos="zoom-in">
+    <div className="col-lg-3 col-md-4 text-center bb  " data-aos="zoom-in">
           <img src={Bandhan_Bank} alt="" />
     </div>
-</div>
+    </div>
+   
+  
 
 
         </div>
@@ -103,6 +109,34 @@ h2{
       /* color: #d29b33; */
       font-family: "Playfair Display";
 
+}
+.marginset{
+      margin-top: -0rem;
+      @media screen and (max-width: 768px) {
+            margin-top: 2rem;
+            
+      }
+}
+.marginset1{
+      margin-top: -0.4rem;
+      @media screen and (max-width: 768px) {
+            margin-top: 0rem;
+            
+      }
+}
+.bb{
+     
+      @media screen and (max-width: 768px) {
+            margin-top: 4rem;
+            
+      }
+}
+.hdfc{
+     
+      @media screen and (max-width: 768px) {
+            margin-top: -1rem;
+            
+      }
 }
 
 
