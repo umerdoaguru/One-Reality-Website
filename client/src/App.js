@@ -29,6 +29,7 @@ import Login from "./pages/Login";
 import Registration from "./pages/Registration";
 import AdminDashboard from "./pages/AdminDashboard";
 import { useSelector } from "react-redux";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   const user = useSelector(state => state.auth.user);
@@ -55,6 +56,7 @@ function App() {
           <Route path="/nirvana-city" element={<Nirvana_City_Project/>} />
           <Route path="/nirvana-exoticaa" element={<Nirvana_Exoticaa_Project/>} />
           <Route path="/nirvana-home" element={<Nirvana_Home_Project/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
         
           <Route path="/blog1" element={<Blog1/>} />
           <Route path="/blog2" element={<Blog2/>} />

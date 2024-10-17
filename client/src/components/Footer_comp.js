@@ -147,6 +147,17 @@ function Footer_comp() {
             Gallery
             </Link>
           </div>
+          <div>
+            {" "}
+            <Link
+              to="/privacy-policy"
+              onClick={handleFooterLink}
+             
+              className=""
+            >
+          Privacy Policy
+            </Link>
+          </div>
         
         </div>
         <div className="middle box">

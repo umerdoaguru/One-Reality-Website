@@ -216,7 +216,7 @@ import { IoTime } from "react-icons/io5";
 import { CiMap } from "react-icons/ci";
 import { FaEnvelopeOpenText } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
-import { MdEmail, MdPhone } from "react-icons/md";
+import { MdEmail, MdLocationCity, MdLocationPin, MdPhone } from "react-icons/md";
 import { IoReceiptOutline } from "react-icons/io5";
 import axios from "axios";
 import cogoToast from "cogo-toast";
@@ -225,6 +225,8 @@ function Forms() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile_no, setMobile_no] = useState("");
+  const [address, setAddress] = useState("");
+
   const [subject, setSubject] = useState("Query");
   
   const [message, setMessage] = useState("");
@@ -246,6 +248,7 @@ function Forms() {
     }
   
     if (!message) formErrors.message = "Message is required";
+    if (!address) formErrors.address = "Address is required";
     setErrors(formErrors);
     return Object.keys(formErrors).length === 0;
   };
@@ -258,6 +261,7 @@ function Forms() {
           email: email,
           mobile_no: mobile_no,
          subject: subject,
+         address: address,
           message: message,
         });
 
@@ -266,6 +270,7 @@ function Forms() {
           setName("");
           setEmail("");
           setMobile_no("");
+          setAddress("");
       
           setMessage("");
         } else {
@@ -317,8 +322,8 @@ function Forms() {
             </div>
 
             <div className="col-md-8 px-5 mt-5 md:mt-0" data-aos="fade-left" data-aos-offset="60" data-aos-easing="ease-in-sine">
-              <form className="form-outline pb-5">
-                <div data-mdb-input-init className="form-outline mb-4">
+              <form className="form-outline pb-4">
+                <div data-mdb-input-init className="form-outline mb-2">
                   <label className="form-label fw-bold" htmlFor="form4Example1">
                     Name
                   </label>
@@ -335,7 +340,7 @@ function Forms() {
                   {errors.name && <span className="error">{errors.name}</span>}
                 </div>
 
-                <div data-mdb-input-init className="form-outline mb-4">
+                <div data-mdb-input-init className="form-outline mb-2">
                   <label className="form-label fw-bold" htmlFor="form4Example2">
                     Email address
                   </label>
@@ -351,7 +356,7 @@ function Forms() {
                   <MdEmail className="icon-position" />
                   {errors.email && <span className="error">{errors.email}</span>}
                 </div>
-                <div data-mdb-input-init className="form-outline mb-4">
+                <div data-mdb-input-init className="form-outline mb-2">
                   <label className="form-label fw-bold" htmlFor="form4Example2">
                     Moblie Number
                   </label>
@@ -367,6 +372,24 @@ function Forms() {
                   />
                   <MdPhone className="icon-position" />
                   {errors.mobile_no && <span className="error">{errors.mobile_no}</span>}
+                
+                </div>
+                <div data-mdb-input-init className="form-outline mb-2">
+                  <label className="form-label fw-bold" htmlFor="form4Example2">
+                    Address
+                  </label>
+                  <input
+                    type="text"
+                    id="form4Example2"
+                    className="form-control py-3"
+                    placeholder="Enter Your Address "
+                    value={address}
+                    maxLength={10}
+                    onChange={(e) => setAddress(e.target.value)}
+                    required
+                  />
+                  <MdLocationPin className="icon-position" />
+                  {errors.address && <span className="error">{errors.address}</span>}
                 
                 </div>
 

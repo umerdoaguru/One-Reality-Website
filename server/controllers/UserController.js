@@ -157,16 +157,16 @@ const user_data = async (req, res) => {
   
     const {
     
-    		name,	email, mobile_no,	subject,	message	
+    		name,	email, mobile_no,	subject,address,	message	
 
     } = req.body;
     
   
-    const sql = `INSERT INTO contact (name,email,mobile_no,subject,message) VAlUES (?,?,?,?,?)`;
+    const sql = `INSERT INTO contact (name,email,mobile_no,subject,address,message) VALUES (?,?,?,?,?,?)`;
     db.query(
       sql,
       [
-        name,	email,	mobile_no,subject,	message	
+        name,	email,	mobile_no,subject,address,	message	
   
       ],
       (err, results) => {
