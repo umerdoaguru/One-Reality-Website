@@ -19,14 +19,14 @@ function CountSection() {
           </div>
           <div className="col-lg-3 col-md-6 text-center mb-4">
             <div>
-              <FaBath className="CountIcons rounded-circle p-3" />
+              <FaBed  className="CountIcons rounded-circle p-3" />
               <h2><CountUp start={0} end={70} duration={10} delay={3} />+</h2>
               <h6>Bedrooms</h6>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 text-center mb-4">
             <div>
-              <FaBed className="CountIcons rounded-circle p-3" />
+              <FaBath className="CountIcons rounded-circle p-3" />
               <h2><CountUp start={0} end={90} duration={10} delay={3} />+</h2>
               <h6>Bathrooms</h6>
             </div>
