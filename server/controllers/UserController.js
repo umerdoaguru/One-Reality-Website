@@ -109,7 +109,7 @@ const login = async (req, res) => {
       }
      
      //generate  token 
-     const token = await JWT.sign({id: user.id}, process.env.JWT_SECRET,{ expiresIn: "7d"});
+     const token = await JWT.sign({id: user.user_id}, process.env.JWT_SECRET,{ expiresIn: "7d"});
 
      res.status(200).send({
       success: true,
@@ -118,9 +118,9 @@ const login = async (req, res) => {
         id: user.user_id,
         name:user.user_name,
         email:user.email,
+        token: token,
        
       },
-      token,
      });
     });
     }

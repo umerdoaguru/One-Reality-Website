@@ -5,18 +5,26 @@ import ReactPaginate from 'react-paginate';
 import UserLogin from './UserLogin';
 import Logout from "./Logout";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 const AdminDashboard = () => {
   const [userData, setUserData] = useState([]);
+  const user = useSelector((state) => state.auth.user);
+  console.log(user);
+  
   const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage] = useState(10);
   const [filterText, setFilterText] = useState("");
   const [dateFilter, setDateFilter] = useState("");
-
+  const token = user?.token;
   useEffect(() => {
     const fetchUserdata = async () => {
       try {
-        const response = await axios.get(`https://one-realty.in/api/user-data`);
+        const response = await axios.get(`https://one-realty.in/api/user-data`, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+        }});
         setUserData(response.data);
     
       } catch (error) {
@@ -93,6 +101,7 @@ const AdminDashboard = () => {
                     <th>Email Id</th>
                     <th>Mobile Number</th>
                     <th>Subject</th>
+                    <th>Address</th>
                     <th>Message</th>
                     <th>Created Date</th>
                   </tr>
@@ -105,6 +114,7 @@ const AdminDashboard = () => {
                       <td>{userdata.email}</td>
                       <td>{userdata.mobile_no}</td>
                       <td>{userdata.subject}</td>
+                      <td>{userdata.address}</td>
                       <td>{userdata.message}</td>
                       <td>{moment(userdata.created_date).format('DD/MM/YYYY')}</td>
                     </tr>
