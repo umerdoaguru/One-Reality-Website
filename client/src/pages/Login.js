@@ -101,6 +101,7 @@ function Login() {
                     </button>
                   </div>
                 </div>
+                <Link to="/admin-reset-password" className="text-blue-500 hover:text-green-600 text-sm "><p className='text-end'>Forgot Password?</p> </Link>
               <div className="d-flex justify-content-center">
                 <button className="btn btn-success" onClick={handleSumbit} >Submit</button>
               </div>

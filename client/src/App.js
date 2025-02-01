@@ -30,6 +30,7 @@ import Registration from "./pages/Registration";
 import AdminDashboard from "./pages/AdminDashboard";
 import { useSelector } from "react-redux";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import AdminResetPassword from "./pages/AdminResetPassword";
 
 function App() {
   const user = useSelector(state => state.auth.user);
@@ -63,6 +64,8 @@ function App() {
           <Route path="/blog3" element={<Blog3/>} />
           <Route path="/blog4" element={<Blog4/>} />
           <Route path="/blog5" element={<Blog5/>} />
+        <Route path="/admin-reset-password" element={<AdminResetPassword />} />
+
       </Routes>
       <Footer_comp/>
       </div>
