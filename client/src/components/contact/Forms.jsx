@@ -384,7 +384,7 @@ function Forms() {
                     className="form-control py-3"
                     placeholder="Enter Your Address "
                     value={address}
-                    maxLength={10}
+                    maxLength={1000}
                     onChange={(e) => setAddress(e.target.value)}
                     required
                   />

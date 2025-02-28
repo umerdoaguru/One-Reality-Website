@@ -18,7 +18,7 @@ function Nirman_Nagar_Project() {
     { src: photo2, title: 'Garden' },
     { src: photo3, title: 'Main Road' },
     { src: photo4, title: 'Construction' },
-    { src: photo5, title: 'Construction' },
+  
     { src: photo6, title: 'House View' },
     { src: photo7, title: 'Kid Park' },
     { src: photo8, title: 'Road' },
