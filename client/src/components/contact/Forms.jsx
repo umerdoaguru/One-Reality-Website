@@ -220,6 +220,7 @@ import { MdEmail, MdLocationCity, MdLocationPin, MdPhone } from "react-icons/md"
 import { IoReceiptOutline } from "react-icons/io5";
 import axios from "axios";
 import cogoToast from "cogo-toast";
+import { Link } from "react-router-dom";
 
 function Forms() {
   const [name, setName] = useState("");
@@ -230,7 +231,7 @@ function Forms() {
   const [subject, setSubject] = useState("Query");
   
   const [message, setMessage] = useState("");
-
+  const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
 
   const validateForm = () => {
@@ -256,6 +257,7 @@ function Forms() {
   const handleSubmit = async () => {
     if (validateForm()) {
       try {
+        setLoading(true)
         const response = await axios.post(`https://one-realty.in/api/contact`, {
           name: name,
           email: email,
@@ -273,10 +275,13 @@ function Forms() {
           setAddress("");
       
           setMessage("");
+          setLoading(false)
         } else {
+          setLoading(false)
           console.error("Error uploading patient test data");
         }
       } catch (error) {
+        setLoading(false)
         console.error("Server Error:", error.message);
       }
     }
@@ -289,6 +294,12 @@ function Forms() {
           <div className="row d-flex align-items-center">
             <div className=" Address-detail col-md-4 fs-bold pt-5" data-aos="fade-right" data-aos-offset="60" data-aos-easing="ease-in-sine">
               <div>
+              <Link
+                  to="https://maps.app.goo.gl/BK8Shsg6XkZhZk4J6"
+                 
+                  className=""
+                  target='__blank'
+                >
                 <div className="icons d-flex align-items-center justify-content-center">
                   <CiMap className="fs-1" />
                 </div>
@@ -298,6 +309,7 @@ function Forms() {
                   Railway Stadium North, South Civil Lines,
                 </h6>
                 <h6>Jabalpur, Madhya Pradesh 482001</h6>
+                </Link>
               </div>
               <hr />
               <div>
@@ -416,9 +428,9 @@ function Forms() {
                     type="button"
                     className="btn btn-primary btn-lg md:fw-bold rounded-pill mb-4 w-25"
                     onClick={handleSubmit}
-                    style={{ backgroundColor: "#01614e", borderRadius: "1.5rem" }}
+                    style={{ backgroundColor: "#01614e", borderRadius: "1.5rem", color:"white" }}
                   >
-                    Send
+                     {loading ? 'Sumbit...' : 'Sumbit'}
                   </button>
                 </div>
               </form>
@@ -468,6 +480,9 @@ const Container = styled.div`
     color: red;
     font-size: 0.8rem;
     margin-top: 0.5rem;
+  }
+  a{
+    text-decoration: none;
   }
 `;
 

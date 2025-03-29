@@ -45,9 +45,16 @@ function Footer_comp() {
                 </div>
                 <div>
                   <span className="m-1 text-white">
+                  <Link
+                  to="https://maps.app.goo.gl/BK8Shsg6XkZhZk4J6"
+                 
+                  className=""
+                  target='__blank'
+                >
                   First Floor, Chamber No.: 1 & 2, Datt Residency, <br /> opposite Railway Stadium North, South Civil Lines, <br />Jabalpur, Madhya Pradesh 482001
                 
                     482002
+                    </Link>
                   </span>
                 </div>
               </div>

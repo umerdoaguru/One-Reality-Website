@@ -370,9 +370,9 @@
 //   }
 // `;
 
-import React from "react";
+import React, { useState } from "react";
 import img from "../images/company_logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { IoCallOutline } from "react-icons/io5";
 import { CiMail } from "react-icons/ci";
@@ -381,6 +381,15 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Header() {
+  const [expanded, setExpanded] = useState(false);
+
+  const navigate = useNavigate();
+  const handleFooterLink = (url) => {
+    
+    setExpanded(false); // Closes the navbar toggle
+    navigate(url);
+  };
+
   return (
     <Wrapper>
       <div className="">
@@ -430,36 +439,39 @@ function Header() {
         </div>
         <div className="container-fluid bg-light">
           <div className="container">
-            <Navbar expand="lg" className="navbar-light py-2">
+            <Navbar expand="lg" expanded={expanded} className="navbar-light py-2">
               <Container fluid>
                 <Navbar.Brand href="/">
                   <img src={img} alt="" width="200" height="90" />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarNav" />
+                <Navbar.Toggle 
+          aria-controls="navbarNav" 
+          onClick={() => setExpanded(expanded ? false : true)} 
+        />
                 <Navbar.Collapse id="navbarNav">
                   <Nav className="mx-auto gap-3">
-                    <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                    <Nav.Link as={Link} to="/" onClick={() => handleFooterLink("/")} className="nav-link">Home</Nav.Link>
+                    <Nav.Link as={Link} to="/about" onClick={() => handleFooterLink("/about")}>About Us</Nav.Link>
                     <NavDropdown title="Our Project" id="basic-nav-dropdown" style={{ color: "#01614e" }}>
                       <NavDropdown title="Completed Project" id="completed-project-dropdown" drop="end">
-                        <NavDropdown.Item as={Link} to="/aura-city">Aura City</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to="/nirvana-city">Nirvana City</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to="/nirvana-exoticaa">Nirvana Exoticaa</NavDropdown.Item>
-                        <NavDropdown.Item as={Link} to="/nirman-nagar">Nirman Nagar</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/aura-city" onClick={() => handleFooterLink("/aura-city")}>Aura City</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/nirvana-city" onClick={() => handleFooterLink("/nirvana-city")}>Nirvana City</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/nirvana-exoticaa" onClick={() => handleFooterLink("/nirvana-exoticaa")}>Nirvana Exoticaa</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/nirman-nagar" onClick={() => handleFooterLink("/nirman-nagar")}>Nirman Nagar</NavDropdown.Item>
                       </NavDropdown>
                       <NavDropdown title="Ongoing Project" id="ongoing-project-dropdown" drop="end">
-                      <NavDropdown.Item as={Link} to="/nirvana-home">Nirvana Homes</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/nirvana-home" onClick={() => handleFooterLink("/nirvana-home")}>Nirvana Homes</NavDropdown.Item>
                         </NavDropdown>
                       
                       <NavDropdown title="Upcoming Project" id="upcoming-project-dropdown" drop="end">
-                      <NavDropdown.Item as={Link} >Coming Soon</NavDropdown.Item>
+                      <NavDropdown.Item as={Link} onClick={() => handleFooterLink("#")} >Coming Soon</NavDropdown.Item>
                         </NavDropdown>
                       
                       
                     </NavDropdown>
-                    <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
-                    <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                    <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+                    <Nav.Link as={Link} to="/gallery" onClick={() => handleFooterLink("/gallery")}>Gallery</Nav.Link>
+                    <Nav.Link as={Link} to="/blogs" onClick={() => handleFooterLink("/blogs")}>Blogs</Nav.Link>
+                    <Nav.Link as={Link} to="/contact" onClick={() => handleFooterLink("/conatct")}>Contact Us</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>

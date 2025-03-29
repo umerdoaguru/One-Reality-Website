@@ -15,6 +15,7 @@ import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 function Login() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [formData , setFormData] = useState({});
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
  
@@ -31,20 +32,24 @@ function Login() {
     console.log(formData);
     e.preventDefault();
     try{
+      setLoading(true)
       const res  = await axios.post("https://one-realty.in/api/login", formData)
       console.log(res)
       if(res.data.success === true){
         dispatch(loginUser(res.data.user)); 
         cogoToast.success(`${res.data.message}`)
         navigate("/useronerealtydata");
+        setLoading(false)
       }
       else{
+        setLoading(false)
         cogoToast.error(`${res.data.message}`)
       }
     
     }
     catch(error){
       console.log(error?.response?.data?.error)
+      setLoading(false)
       cogoToast.error(`${error?.response?.data?.message}`)
     }
 
@@ -103,7 +108,7 @@ function Login() {
                 </div>
                 <Link to="/admin-reset-password" className="text-blue-500 hover:text-green-600 text-sm "><p className='text-end'>Forgot Password?</p> </Link>
               <div className="d-flex justify-content-center">
-                <button className="btn btn-success" onClick={handleSumbit} >Submit</button>
+                <button className="btn btn-success" onClick={handleSumbit} disabled = {loading} > {loading ? 'Sumbit...' : 'Sumbit'}</button>
               </div>
               <p className="mb-2 mt-2" >
                 Don't have an account? {" "}

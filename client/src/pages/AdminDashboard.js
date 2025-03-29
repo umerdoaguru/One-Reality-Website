@@ -6,7 +6,7 @@ import UserLogin from './UserLogin';
 import Logout from "./Logout";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-
+import {  BsTrash } from "react-icons/bs";
 const AdminDashboard = () => {
   const [userData, setUserData] = useState([]);
   const user = useSelector((state) => state.auth.user);
@@ -15,25 +15,40 @@ const AdminDashboard = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage] = useState(10);
   const [filterText, setFilterText] = useState("");
+  
   const [dateFilter, setDateFilter] = useState("");
   const token = user?.token;
   useEffect(() => {
-    const fetchUserdata = async () => {
-      try {
-        const response = await axios.get(`https://one-realty.in/api/user-data`, {
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
-        }});
-        setUserData(response.data);
-    
-      } catch (error) {
-        console.error("Error fetching quotations:", error);
-      }
-    };
+  
 
     fetchUserdata();
   }, []);
+  const fetchUserdata = async () => {
+    try {
+      const response = await axios.get(`https://one-realty.in/api/user-data`, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
+      }});
+      setUserData(response.data);
+  
+    } catch (error) {
+      console.error("Error fetching quotations:", error);
+    }
+  };
+  const handleDeleteClick = async (id) => {
+    const isConfirmed = window.confirm(
+      "Are you sure you want to delete this data?"
+    );
+    if (isConfirmed) {
+      try {
+        await axios.delete(`https://one-realty.in/api/user-data/${id}`);
+        fetchUserdata(); // Refresh the list after deletion
+      } catch (error) {
+        console.error("Error deleting lead:", error);
+      }
+    }
+  };
 
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
@@ -104,6 +119,7 @@ const AdminDashboard = () => {
                     <th>Address</th>
                     <th>Message</th>
                     <th>Created Date</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -117,6 +133,13 @@ const AdminDashboard = () => {
                       <td>{userdata.address}</td>
                       <td>{userdata.message}</td>
                       <td>{moment(userdata.created_date).format('DD/MM/YYYY')}</td>
+                      <td> <button
+                          className="text-red-500 hover:text-red-700 mx-2"
+                          onClick={() => handleDeleteClick(userdata.id)}
+                        >
+                          <BsTrash size={20} />
+                        </button></td>
+
                     </tr>
                   ))}
                 </tbody>
